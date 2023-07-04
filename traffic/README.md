@@ -88,12 +88,21 @@ Após isso, foram testadas as camadas densas e de dropout. O número de unidades
 Por fim, foram testados os otimizadores, variando de adam a rmsprop. Todos esses resultados estão mostrados na tabela abaixo, não incluindo todos os valores, apenas os mais significativos.
 
 *=========================================================================*
+
 |   | qt. layers |qt. pooling| dense | dropout|optimizer | loss  |accuracy|
+
 | 1 | one 64     |    1		 |  128  |   0.5  |"rmsprop" |0.5132 | 0.8842 |
+
 | 2 | two 32     |    1   	 |  128  |   0.5  |"rmsprop" |0.2242 | 0.9712 |
+
 | 3 | two 32     |    1		 |  128  |   0.5  |"adam"    |0.2575 | 0.9368 |
+
 | 4 | two 32     |    2   	 |  256  |   0.5  |"rmsprop" |0.3133 | 0.9403 |
+
 | 5 | two 32 & 64|    2		 |  256  |   0.5  |"rmsprop" |0.2125 | 0.9703 |
+
 | 6 | two 32 & 64|    2   	 |  256  |   0.5  |"adam"    |0.1024 | 0.9759 |
+
 | 7 |  two 64    |    2		 |  256  |   0.5  |"rmsprop" |0.4387 | 0.9056 |
+
 *=========================================================================*

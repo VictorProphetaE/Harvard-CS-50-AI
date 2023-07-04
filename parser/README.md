@@ -16,9 +16,9 @@ Certifique-se de ter o Python instalado em seu sistema e a biblioteca NLTK devid
 2. Instale a biblioteca NLTK executando o seguinte comando no terminal:
     ```
     pip install nltk
-    ```
-ou
-    ```
+
+    ou
+
     pip install -r requirements.txt
     ```
     

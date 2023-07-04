@@ -59,3 +59,5 @@ Os resultados serão exibidos no formato a seguir:
     True Negative Rate: 90.55%
 
 Substitua X, Y, Z e W pelos valores reais calculados pelo programa.
+
+Acesse a [página do desafio](https://cs50.harvard.edu/ai/2020/projects/4/shopping/) para acessar a página do desafio.

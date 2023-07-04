@@ -30,12 +30,12 @@ A função main() neste arquivo é o ponto de entrada do programa. Ele lê a est
 ## Uso
 
 O programa pode ser executado a partir da linha de comando com os seguintes argumentos:
-    ```
+
     python generate.py structure words [output]
-    ```
-    - `structure`: O caminho para o arquivo contendo a estrutura das palavras cruzadas.
-    - `words`: O caminho para o arquivo contendo a lista de palavras disponíveis para preencher as palavras cruzadas.
-    - `output` (opcional): O caminho para o arquivo de saída onde a solução será salva como uma imagem.
+
+- `structure`: O caminho para o arquivo contendo a estrutura das palavras cruzadas.
+- `words`: O caminho para o arquivo contendo a lista de palavras disponíveis para preencher as palavras cruzadas.
+- `output` (opcional): O caminho para o arquivo de saída onde a solução será salva como uma imagem.
 
 Se nenhum arquivo de saída for especificado, a solução será apenas impressa no terminal.
 
@@ -70,16 +70,15 @@ ten
 ## Dependências
 
 O programa requer a biblioteca Python PIL (Pillow) para gerar e salvar a imagem da solução. Você pode instalá-la usando o comando:
-    ```
+
     pip install Pillow
-    ```
 
 ## Exemplo de Execução
-    ```
+
     python generate.py data/structure1.txt data/words1.txt output.png
-    ```
 
 Este comando lê a estrutura das palavras cruzadas do arquivo `structure.txt`, a lista de palavras do arquivo `words.txt`, e salva a solução como uma imagem no arquivo `output.png`.
 
-
 Note: The program requires the PIL (Python Imaging Library) package to save the crossword as an image. Make sure to install the required dependencies before running the program.
+
+Acesse a [página do desafio](https://cs50.harvard.edu/ai/2020/projects/3/crossword/) para acessar a página do desafio. 

@@ -107,3 +107,6 @@ Por fim, foram testados os otimizadores, variando de adam a rmsprop. Todos esses
 | 7 |  two 64    |    2		 |  256  |   0.5  |"rmsprop" |0.4387 | 0.9056 |
 
 *=========================================================================*
+
+
+Acesse a [página do desafio](https://cs50.harvard.edu/ai/2020/projects/5/traffic/) clique para acessar a página do desafio de Harvard.

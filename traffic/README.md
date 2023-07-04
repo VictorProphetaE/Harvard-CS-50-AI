@@ -13,16 +13,6 @@ Instalar as bibliotecas necessárias:
 
     pip install -r requirements.txt
 
-## Uso
-
-    python traffic.py data_directory [model.h5]
-
-data_directory: O diretório que contém os dados de treinamento. O diretório deve ter uma pasta para cada categoria, numeradas de 0 a NUM_CATEGORIES-1. Dentro de cada pasta de categoria devem estar as imagens correspondentes.
-
-model.h5 (opcional): O nome do arquivo para salvar o modelo treinado.
-
-Se nenhum nome de arquivo for fornecido para o modelo treinado, o modelo não será salvo.
-
 ## Funcionalidades
 
 O programa realiza as seguintes etapas:
@@ -79,9 +69,8 @@ O modelo é compilado com a função de perda "categorical_crossentropy", otimiz
 
 Execute o programa usando o comando abaixo:
 
-    ```
     python traffic.py data_directory [model.h5]
-    ```
+    
 
 Substitua data_directory pelo diretório que contém os dados de treinamento. Você pode fornecer um nome de arquivo model.h5 opcional para salvar o modelo treinado.
 
@@ -89,9 +78,9 @@ O programa carregará os dados, treinará o modelo, avaliará seu desempenho e, 
 
 ## Modelos e testagem para otimização 
 
-    ```
+    
     python traffic.py gtsrb
-    ```
+    
     
 Primeiro, foi testado o número de camadas, de 1 a 3, e em seguida o número de filtros, de 16 a 64. Foi observado que com 2 camadas, uma com 32 filtros e outra com 64 filtros, em sequência, cada uma com pooling, apresentou melhor desempenho. Com mais de 2 camadas e com filtros acima de 64, a taxa de precisão diminuiu juntamente com a perda.
 

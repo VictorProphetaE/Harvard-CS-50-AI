@@ -46,9 +46,13 @@ Se nenhum arquivo de saída for especificado, a solução será apenas impressa 
 O arquivo de estrutura especifica a grade das palavras cruzadas. Cada linha do arquivo representa uma linha da grade. Os caracteres `_` representam células vazias onde as letras devem ser preenchidas, e outros caracteres representam células bloqueadas (não podem ser preenchidas). Por exemplo:
 
 #___#
+
 #_##_
+
 #_##_
+
 #_##_
+
 #____
 
 ### Arquivo de Palavras
@@ -56,16 +60,24 @@ O arquivo de estrutura especifica a grade das palavras cruzadas. Cada linha do a
 O arquivo de palavras contém uma lista de palavras válidas para preencher as palavras cruzadas. Cada palavra deve estar em uma linha separada. Por exemplo:
 
 one
-two
-three
-four
-five
-six
-seven
-eight
-nine
-ten
 
+two
+
+three
+
+four
+
+five
+
+six
+
+seven
+
+eight
+
+nine
+
+ten
 
 ## Dependências
 

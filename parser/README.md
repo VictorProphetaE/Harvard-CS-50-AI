@@ -14,20 +14,22 @@ Certifique-se de ter o Python instalado em seu sistema e a biblioteca NLTK devid
 1. Faça o download do arquivo parser.py.
 
 2. Instale a biblioteca NLTK executando o seguinte comando no terminal:
-    ```
-    pip install nltk
 
-    ou
-
-    pip install -r requirements.txt
-    ```
+   ```
+   pip install nltk
+   ```
+   ou
+   ```
+   pip install -r requirements.txt
+   ```
     
 ## Uso
 
 Execute o programa parser.py da seguinte maneira:
-    ```
-    python parser.py [caminho_do_arquivo]
-    ```
+
+   ```
+   python parser.py [caminho_do_arquivo]
+   ```
     
 - Se você fornecer o caminho de um arquivo como argumento, o programa lerá a frase do arquivo.
 

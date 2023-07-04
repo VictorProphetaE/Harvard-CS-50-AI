@@ -9,7 +9,8 @@ Este é um programa em Python que realiza o reconhecimento de sinais de trânsit
 
 Certifique-se de ter todas as dependências instaladas antes de executar o programa.
 
-    Instalar as bibliotecas necessárias:
+Instalar as bibliotecas necessárias:
+
     ```
     pip install -r requirements.txt
     ```
@@ -19,8 +20,9 @@ Certifique-se de ter todas as dependências instaladas antes de executar o progr
     python traffic.py data_directory [model.h5]
     ```
 
-    data_directory: O diretório que contém os dados de treinamento. O diretório deve ter uma pasta para cada categoria, numeradas de 0 a NUM_CATEGORIES-1. Dentro de cada pasta de categoria devem estar as imagens correspondentes.
-    model.h5 (opcional): O nome do arquivo para salvar o modelo treinado.
+data_directory: O diretório que contém os dados de treinamento. O diretório deve ter uma pasta para cada categoria, numeradas de 0 a NUM_CATEGORIES-1. Dentro de cada pasta de categoria devem estar as imagens correspondentes.
+
+model.h5 (opcional): O nome do arquivo para salvar o modelo treinado.
 
 Se nenhum nome de arquivo for fornecido para o modelo treinado, o modelo não será salvo.
 
@@ -28,13 +30,19 @@ Se nenhum nome de arquivo for fornecido para o modelo treinado, o modelo não se
 
 O programa realiza as seguintes etapas:
 
-    1. Carrega as imagens e os rótulos de todas as imagens do diretório de dados.
-    2. Divide os dados em conjuntos de treinamento e teste.
-    3. Converte os rótulos em representação one-hot.
-    4. Constrói o modelo da rede neural convolucional.
-    5. Treina o modelo com os dados de treinamento.
-    6. Avalia o desempenho do modelo usando os dados de teste.
-    7. Salva o modelo treinado em um arquivo, se fornecido.
+1. Carrega as imagens e os rótulos de todas as imagens do diretório de dados.
+ 
+2. Divide os dados em conjuntos de treinamento e teste.
+
+3. Converte os rótulos em representação one-hot.
+
+4. Constrói o modelo da rede neural convolucional.
+
+5. Treina o modelo com os dados de treinamento.
+
+6. Avalia o desempenho do modelo usando os dados de teste.
+
+7. Salva o modelo treinado em um arquivo, se fornecido.
 
 ## Funções Principais
 
@@ -52,14 +60,21 @@ Retorna um modelo de rede neural convolucional compilado. Assume-se que o input_
 
 O modelo é construído com as seguintes camadas:
 
-    1. Uma camada convolucional com 32 filtros, tamanho de kernel (3,3), padding "same" e ativação "relu".
-    2. Uma camada de max pooling com tamanho de pool (2,2).
-    3. Uma camada convolucional com 64 filtros, tamanho de kernel (3,3), padding "same" e ativação "relu".
-    4. Uma camada de max pooling com tamanho de pool (2,2).
-    5. Uma camada de achatamento.
-    6. Uma camada densa oculta com 256 unidades e ativação "relu".
-    7. Uma camada de dropout com taxa de dropout de 0.5.
-    8. Uma camada densa de saída com ativação "softmax" e NUM_CATEGORIES unidades.
+1. Uma camada convolucional com 32 filtros, tamanho de kernel (3,3), padding "same" e ativação "relu".
+
+2. Uma camada de max pooling com tamanho de pool (2,2).
+
+3. Uma camada convolucional com 64 filtros, tamanho de kernel (3,3), padding "same" e ativação "relu".
+   
+4. Uma camada de max pooling com tamanho de pool (2,2).
+   
+5. Uma camada de achatamento.
+   
+6. Uma camada densa oculta com 256 unidades e ativação "relu".
+    
+7. Uma camada de dropout com taxa de dropout de 0.5.
+    
+8. Uma camada densa de saída com ativação "softmax" e NUM_CATEGORIES unidades.
 
 O modelo é compilado com a função de perda "categorical_crossentropy", otimizador "adam" e métricas de avaliação "accuracy".
 

@@ -11,14 +11,11 @@ Certifique-se de ter todas as dependências instaladas antes de executar o progr
 
 Instalar as bibliotecas necessárias:
 
-    ```
     pip install -r requirements.txt
-    ```
 
 ## Uso
-    ```
+
     python traffic.py data_directory [model.h5]
-    ```
 
 data_directory: O diretório que contém os dados de treinamento. O diretório deve ter uma pasta para cada categoria, numeradas de 0 a NUM_CATEGORIES-1. Dentro de cada pasta de categoria devem estar as imagens correspondentes.
 

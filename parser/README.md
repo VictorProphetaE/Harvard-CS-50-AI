@@ -18,9 +18,8 @@ Certifique-se de ter o Python instalado em seu sistema e a biblioteca NLTK devid
     pip install nltk
     ```
 ou
-    ```
+
     pip install -r requirements.txt
-    ```
 
 ## Uso
 

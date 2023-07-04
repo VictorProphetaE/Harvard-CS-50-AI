@@ -18,15 +18,17 @@ Certifique-se de ter o Python instalado em seu sistema e a biblioteca NLTK devid
     pip install nltk
     ```
 ou
-
+    ```
     pip install -r requirements.txt
-
+    ```
+    
 ## Uso
 
 Execute o programa parser.py da seguinte maneira:
     ```
     python parser.py [caminho_do_arquivo]
     ```
+    
 - Se você fornecer o caminho de um arquivo como argumento, o programa lerá a frase do arquivo.
 
 - Caso contrário, o programa solicitará que você insira uma frase manualmente.
